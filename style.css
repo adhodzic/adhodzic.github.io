@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    background: rgb(50,50,50);
+    height: 100vh;
+  }
+  i{
+    position: absolute;
+  }
+  i::after{
+    display: block;
+    content: '';
+    width: var(--width, auto);
+    height: var(--height, auto);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+  }
